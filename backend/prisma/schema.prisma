@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Tarea {
+  id         Int      @id @default(autoincrement())
+  titulo     String
+  descripcion String?
+  completada Boolean  @default(false)
+  creadaEn   DateTime @default(now())
+}
+
+
