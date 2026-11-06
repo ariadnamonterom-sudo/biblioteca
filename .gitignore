@@ -8,6 +8,4 @@ dist/
 *.sqlite 
 *.log 
 .DS_Store
-.claude/ 
-.windsurf/ 
-.agents/
+
